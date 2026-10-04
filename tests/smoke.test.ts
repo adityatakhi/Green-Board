@@ -1,0 +1,1 @@
+import {describe,it,expect} from 'vitest';import {test,resources} from '@/lib/data';describe('Green Board core data',()=>{it('has a real test and resources',()=>{expect(test.questions.length).toBeGreaterThan(0);expect(resources.length).toBeGreaterThan(0)});it('has unique resource slugs',()=>{expect(new Set(resources.map(r=>r.slug)).size).toBe(resources.length)})})
